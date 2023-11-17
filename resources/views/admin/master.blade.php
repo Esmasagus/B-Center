@@ -137,7 +137,10 @@
 				 <a class="dropdown-item" href="{{ url("#") }}"><i class="ti-wallet text-muted mr-2"></i> My Wallet</a>
 				 <a class="dropdown-item" href="{{ url("#") }}"><i class="ti-settings text-muted mr-2"></i> Settings</a>
 				 <div class="dropdown-divider"></div>
-				 <a class="dropdown-item" href="{{ route("Logout") }}"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+				 <form align="center" action="{{ url('logout') }}" method="post">
+					@csrf
+					<button type="submit" class="btn btn-block btn-outline-danger btn-xs">Logout asdsad
+					</button>
 			  </li>
 			</ul>
           </li>	
@@ -434,8 +437,12 @@
 		  
 		<li>
           <a href="{{ url("auth_login.html") }}">
-            <i data-feather="lock"></i>
-			<span>Log Out</span>
+				<form align="center" action="{{ url('logout') }}" method="post">
+					@csrf
+					<button type="submit" class="btn btn-block btn-outline-danger btn-xs">Logout kang
+					</button>
+					</div>
+				</form>
           </a>
         </li> 
         
