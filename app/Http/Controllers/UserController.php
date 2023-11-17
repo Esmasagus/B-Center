@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+
 
 class UserController extends Controller
 {
@@ -39,6 +41,7 @@ class UserController extends Controller
         $simpan = $request->all();
         $validasi = Validator::make($simpan,[
             'name' => 'required|max:150',
+            'no_telp' => 'required|max:13|unique:users',
             'email' => 'required|email|max:100|unique:users',
             'password' => 'required|min:8',
         ]);
@@ -80,6 +83,7 @@ class UserController extends Controller
         if ($user) {
             $request->validate([
                 'name' => 'required|max:150',
+                'no_telp' => 'required|max:13|unique:users,no_telp,' . $id,
                 'email' => 'required|email|max:100|unique:users,email,' . $id,
                 'password' => 'required|min:8',
             ]);
@@ -87,6 +91,7 @@ class UserController extends Controller
             // Update the user's data
             $user->update([
                 'name' => $request->input('name'),
+                'no_telp' => $request->input('no_telp'),
                 'email' => $request->input('email'),
                 'password' => Hash::make($request->input('password')), // Hash the password
             ]);

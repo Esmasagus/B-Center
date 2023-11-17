@@ -8,19 +8,25 @@
         <div class="box">
             
           <div class="box-header">
-              <h4 class="box-title">Add User</h4>  
+              <h4 class="box-title">Add Suppliers</h4>  
           </div>
 
-          <form action="{{ route('user.store') }}" method="POST">
+          <form action="{{ route('supplier.store') }}" method="POST">
             @csrf
             <div class="box-body">
                 <div class="form-group row">
-                    <label class="col-form-label col-md-2">Full Name</label>
+                    <label class="col-form-label col-md-2">Name</label>
                     <div class="col-md-10 mb-3">
                         <input class="form-control" type="text" name="name" required value="{{ old('name') }}">
                   </div>
               </div>
 
+              <div class="form-group row">
+                  <label class="col-form-label col-md-2">Address</label>
+                  <div class="col-md-10 mb-3">
+                      <textarea class="textarea form-control" type="text" name="address" value="{{ old('address') }}" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; padding: 10px;"></textarea>
+                  </div>
+              </div>				
               <div class="form-group row">
                   <label class="col-form-label col-md-2">Phone Number</label>
                   <div class="col-md-10 mb-3">
@@ -35,16 +41,10 @@
                   </div>
               </div>
 
-              <div class="form-group row">
-                  <label class="col-form-label col-md-2">Password</label>
-                  <div class="col-md-10 mb-3">
-                      <input class="form-control" type="password" name="password" value="{{ old('password') }}">
-                  </div>
-              </div>				
           </div>
           <div class="card-footer">
               <button type="submit" class="btn btn-success">Submit</button>
-              <a href="{{ route('user.index') }}" type="button" class="btn btn-danger float-right">Cancel</a>
+              <a href="{{ route('supplier.index') }}" type="button" class="btn btn-danger float-right">Cancel</a>
             </div>
         </form>
           <!-- /.box-body -->

@@ -15,6 +15,7 @@ class AddAdminSeeder extends Seeder
     {
         User::create([
             'name' => 'admin',
+            'no_telp' => '08123456789',
             'email'=> 'admin123@gmail.com',
             'password' => 'Admin123'
 

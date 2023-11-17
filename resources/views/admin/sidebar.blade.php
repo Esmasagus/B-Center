@@ -25,61 +25,40 @@
       
     <li class="treeview">
       <a href="{{ url("#") }}">
-        <i data-feather="grid"></i>
+        <i data-feather="users"></i>
         <span>Users Management</span>
         <span class="pull-right-container">
           <i class="fa fa-angle-right pull-right"></i>
         </span>
       </a>
       <ul class="treeview-menu">
-        <li><a href="{{ route('user.index') }}"><i class="ti-more"></i>Users</a></li>
-        <li><a href="{{ url("components_badges.html") }}"><i class="ti-more"></i>Suppliers</a></li>
+        <li><a href="{{ route('user.index') }}"><i class="ti-user"></i>Users</a></li>
+        <li><a href="{{ route('supplier.index') }}"><i class="ti-truck"></i>Suppliers</a></li>
       </ul>
     </li>
     
-    <li class="header nav-small-cap">EXTRA</li>		  
-      
+    <li class="header nav-small-cap">Products</li> 
     <li class="treeview">
       <a href="{{ url("#") }}">
-        <i data-feather="layers"></i>
-        <span>Multilevel</span>
+        <i data-feather="box"></i>
+        <span>Products</span>
         <span class="pull-right-container">
           <i class="fa fa-angle-right pull-right"></i>
         </span>
       </a>
       <ul class="treeview-menu">
-        <li><a href="{{ url("#") }}">Level One</a></li>
-        <li class="treeview">
-          <a href="{{ url("#") }}">Level One
-            <span class="pull-right-container">
-          <i class="fa fa-angle-right pull-right"></i>
-        </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{ url("#") }}">Level Two</a></li>
-            <li class="treeview">
-              <a href="{{ url("#") }}">Level Two
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-right pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ url("#") }}">Level Three</a></li>
-                <li><a href="{{ url("#") }}">Level Three</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="{{ url("#") }}">Level One</a></li>
+        <li><a href="#"><i class="fa fa-cutlery"></i>Food & drink</a></li>
+        <li><a href="#"><i class="fa fa-mortar-board"></i>Uniform</a></li>
       </ul>
-    </li>  
+    </li>
+
       
-    {{-- <li>
-      <a href="{{ url("auth_login.html") }}">
+    <li>
+      <a href="{{ route('logout') }}">
         <i data-feather="lock"></i>
         <span>Log Out</span>
       </a>
-    </li>  --}}
+    </li> 
     
   </ul>
 </section>

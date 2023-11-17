@@ -37,7 +37,7 @@
         <!-- User Account-->
         <li class="dropdown user user-menu">	
           <a href="{{ url("#") }}" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
-              <img src="{{ asset("/backend/images/avatar/1.jpg") }}" alt="">
+              <img src="{{ asset("/backend/images/avatar/avatar.png") }}" alt="">
           </a>
           <ul class="dropdown-menu animated flipInX">
             <li class="user-body">
@@ -45,7 +45,7 @@
                 <span class="hidden-xs">{{ Auth::user()->name }}</span>
                 @endif
                 </a>
-               <a class="dropdown-item" href="{{ url("#") }}"><i class="ti-user text-muted mr-2"></i>@if (Auth::check())
+               <a class="dropdown-item" href="{{ url("#") }}"><i class="ti-email text-muted mr-2"></i>@if (Auth::check())
                 <span class="hidden-xs">{{ Auth::user()->email }}</span>
                 @endif
                 </a>
