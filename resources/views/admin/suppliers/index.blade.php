@@ -1,5 +1,6 @@
 @extends('admin.master')
 @section('content')
+
 <div class="col-12 mt-4">
     <div class="box">
        <div class="box-header with-border">
