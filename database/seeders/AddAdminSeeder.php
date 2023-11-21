@@ -13,12 +13,22 @@ class AddAdminSeeder extends Seeder
      */
     public function run(): void
     {
-        User::create([
+        $admin = User::create([
             'name' => 'admin',
             'no_telp' => '08123456789',
             'email'=> 'admin123@gmail.com',
-            'password' => 'Admin123'
+            'password' => bcrypt('Admin123')
 
         ]);
+
+        $user = User::create([
+            'name' => 'user',
+            'no_telp' => '08123456674',
+            'email'=> 'user@gmail.com',
+            'password' => bcrypt('password')
+
+        ]);
+
+        $admin->assignRole('admin');
     }
 }

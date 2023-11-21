@@ -21,13 +21,13 @@
                    </tr>
                </thead>
                <tbody>
-                @foreach ($users as $row)   
+                @foreach ($users as $row)
                 <tr>
                     <td>{{ $loop->iteration + ($users->perpage()) * ($users->currentpage()-1)}}</td>
                     <td>{{ $row->name }}</td>
                     <td>{{ $row->no_telp }}</td>
                     <td>{{ $row->email }}</td>
-                    <td>{{ $row->created_at }}</td>
+                    <td>{{ $row->created_at->diffForHumans()}}</td>
                                 <td>
                                     <form action="{{ route('user.destroy', [$row->id]) }}"
                                         onsubmit="return confirm('apakah anda yakin ingin menghapus,{{ $row->name }}?..')"
