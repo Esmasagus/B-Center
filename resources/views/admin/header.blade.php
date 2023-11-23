@@ -52,7 +52,7 @@
                <div class="dropdown-divider"></div>
                <form action="{{ route('logout') }}" method="post">
                 @csrf
-               <button type="submit" class="dropdown-item " style="width: 95%"><i class="ti-lock text-muted mr-2"></i> Logout</in>
+               <button type="submit" class="dropdown-item" style="width: 95%"><i class="ti-lock text-muted mr-2"></i> Logout</in>
             </form>
             </li>
           </ul>

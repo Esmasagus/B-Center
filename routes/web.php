@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\ReportUserController;
+use App\Http\Controllers\ReportSupplierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +36,9 @@ require __DIR__.'/auth.php';
 
 Route::resource('user', UserController::class);
 Route::resource('supplier', SupplierController::class);
+
+Route::resource('reportuser', ReportUserController::class);
+Route::get('cetak_user', 'App\Http\Controllers\ReportUserController@cetak_user')->name('cetak_user');
+
+Route::resource('reportsupplier', ReportSupplierController::class);
+Route::get('cetak_supplier', 'App\Http\Controllers\ReportSupplierController@cetak_supplier')->name('cetak_supplier');

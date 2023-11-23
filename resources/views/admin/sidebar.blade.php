@@ -54,8 +54,23 @@
           <li><a href="#"><i class="fa fa-plus"></i>Tambah Barang</a></li>
         </ul>
       </li>
+
+      <li class="header nav-small-cap">Reports</li> 
+      <li class="treeview">
+        <a href="{{ url("#") }}">
+          <i data-feather="box"></i>
+          <span>Laporan</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-right pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{{ route('reportuser.index') }}"><i class="fa fa-mortar-board"></i>Users</a></li>
+          <li><a href="{{ route('reportsupplier.index') }}"><i class="fa fa-cutlery"></i>Suppliers</a></li>
+          <li><a href="#"><i class="fa fa-plus"></i>Barang</a></li>
+        </ul>
+      </li>
   
-        
       
     </ul>
   </section>
