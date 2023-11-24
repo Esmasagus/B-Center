@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('admin.index');
-})->middleware(['auth', 'verified', 'role:admin'])->name('dashboard');
+})->middleware(['auth', 'verified', ])->name('dashboard');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -40,3 +40,4 @@ require __DIR__.'/auth.php';
 
 Route::resource('user', UserController::class)->middleware(['auth', 'verified', 'role:admin']);
 Route::resource('supplier', SupplierController::class);
+Route::resource('consum','App\Http\Controllers\ConsumController');
