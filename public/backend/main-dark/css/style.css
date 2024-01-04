@@ -654,7 +654,7 @@ hr {
   border-color: #00BC8B !important; }
 
 .border-info {
-  border-color: #7a15f7 !important; }
+  border-color: #4BD0FF !important; }
 
 .border-warning {
   border-color: #FFB800 !important; }
@@ -15441,7 +15441,7 @@ body .main-header .navbar .nav > li.search-box > a:hover, body .main-header .nav
 
 .panel-heading-tab {
   padding: 10px 30px 0;
-  background-color: #7a15f7; }
+  background-color: #4BD0FF; }
   .panel-heading-tab > .nav-tabs .nav-link {
     color: #ffffff; }
     .panel-heading-tab > .nav-tabs .nav-link.hover {
@@ -16953,7 +16953,7 @@ ul.list-style-none li {
     display: block;
     text-decoration: none; }
     ul.list-style-none li a:hover {
-      color: #7a15f7; }
+      color: #4BD0FF; }
 
 .list-style-none li.box-label a {
   font-weight: 500; }
@@ -18161,7 +18161,7 @@ time {
     background-color: #d5dfea;
     color: #475f7b; }
     .fontawesome-icon-list .fa-hover:hover i {
-      color: #7a15f7; }
+      color: #4BD0FF; }
 
 .ion-icon-list .ion-hover {
   cursor: pointer;
@@ -18179,7 +18179,7 @@ time {
     background-color: #d5dfea;
     color: #475f7b; }
     .ion-icon-list .ion-hover:hover i {
-      color: #7a15f7; }
+      color: #4BD0FF; }
 
 .icons-page .preview {
   padding: 15px 0;
@@ -18209,9 +18209,9 @@ time {
     color: #475f7b; }
     .bs-glyphicons li:hover {
       background-color: #d5dfea;
-      color: #7a15f7; }
+      color: #4BD0FF; }
       .bs-glyphicons li:hover .glyphicon {
-        color: #7a15f7; }
+        color: #4BD0FF; }
   .bs-glyphicons .glyphicon {
     margin-top: 5px;
     margin-bottom: 10px;
